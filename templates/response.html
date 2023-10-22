@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weather Data</title>
+</head>
+<body>
+    <h1>Weather Data for {{ name }}</h1>
+    <div>
+        <strong>Coordinates:</strong>
+        <ul>
+            <li>Longitude: {{ coord.lon }}</li>
+            <li>Latitude: {{ coord.lat }}</li>
+        </ul>
+    </div>
+
+    <div>
+        <strong>Weather:</strong>
+        <ul>
+            <li>Main: {{ weather[0].main }}</li>
+            <li>Description: {{ weather[0].description }}</li>
+            <li>Icon: {{ weather[0].icon }}</li>
+        </ul>
+    </div>
+
+    <div>
+        <strong>Base:</strong> {{ base }}
+    </div>
+</body>
+</html>
